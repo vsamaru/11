@@ -1,0 +1,13 @@
+{
+  "name": "newbot-framework-sample",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "newbot serve"
+  },
+  "dependencies": {
+    "newbot": "0.3.3",
+    "newbot-cli": "2.1.0"
+  },
+  "keywords": []
+}

@@ -1,0 +1,24 @@
+$name = ''
+
+@Event('start')
+start() {
+    > Hey ! My name is ChatBot, and you ?
+    Prompt()
+    $name = :text
+    > Hello { $name }
+}
+
+@Event('on', 'AMAZON.StopIntent') // just for Amazon Alexa
+@Intent('input.bye', [
+    'Bye',
+    'Good bye',
+    'See you later'
+])
+bye() {
+    > Bye { $name }
+}
+
+@Event('nothing')
+nothing() {
+    > What ?
+}
